@@ -1,611 +1,324 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Karim Benbourenane</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
-}
+<head>
+	<title>Karim Benbourenane | Software Engineer | http://benbourenane.com/</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
-}
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+	<style>
+	/*
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
+
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+*/
+
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color: #fff;  }
+.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #266400; }
+
+/* //-- yui-grids style overrides -- */
+body { font-family: Georgia; color: #444; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+
+/* //-- header, body, footer -- */
+#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
+#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+#bd, #ft { margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+a { color: #990003 }
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
+
+
+/* //-- section styles -- */
+
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
+
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job p { margin: 0.75em 0 3em 0; }
+
+.last { border: none; }
+.skills-list {  }
+.skills-list ul { margin: 0; }
+.skills-list li { margin: 3px 0; padding: 3px 0; }
+.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+.talent { width: 32%; float: left }
+.talent h2 { margin-bottom: 6px; }
+
+#srt-ttab { margin-bottom: 100px; text-align: center;  }
+#srt-ttab img.last { margin-top: 20px }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u{width:80.2%;}
+.yui-gf div.first{width:12.3%;}
+
+
 
 	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Karim Benbourenane
-					</h1>
-					<h2>
-						Software Engineer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+</head>
+<body>
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">karim@benbourenane.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(412) 889-9110</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://benbourenane.com/">http://benbourenane.com/</a>
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h1>Karim Benbourenane</h1>
+					<h2>Software Engineer</h2>
 				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>My lifelong passions lie in the fields of mathematics, science, and technology. I enjoy challenging problems that lie in the intersection of those fields. Over a decade of technical experience, I&#x27;ve accumulated a background that resonates the theme of developing creative and technical solutions to unsolved problems. I&#x27;ve worked on how to process and analyze large datasets; how to make tedious computing tasks easier for end users; and how to optimize existing software solutions in the face of limited computing resources.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://github.com/kbenbour/">kbenbour</a>
+
+				<div class="yui-u">
+					<div class="contact-info">
+						<h3><a id="pdf" href="#">Download as PDF</a></h3>
+						<h3><a href="mailto:karim@benbourenane.com">karim@benbourenane.com</a></h3>
+						<h3>(412) 889-9110</h3>
+					</div><!--// .contact-info -->
+				</div>
+			</div><!--// .yui-gc -->
+		</div><!--// hd -->
+
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+						<div class="yui-u">
+							<p class="enlarge">
+								My lifelong passions lie in the fields of mathematics, science, and technology. I enjoy challenging problems that lie in the intersection of those fields. Over a decade of technical experience, I&#x27;ve accumulated a background that resonates the theme of developing creative and technical solutions to unsolved problems. I&#x27;ve worked on how to process and analyze large datasets; how to make tedious computing tasks easier for end users; and how to optimize existing software solutions in the face of limited computing resources. 
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Carnegie Mellon University</span>
-					<span class="date">
-						2012-04-23 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.cmu.edu/computing/">http://www.cmu.edu/computing/</a>
-				</div>
-				<div class="position">
-					Software Engineer
-				</div>
-				<div class="summary">
-					<p>Designed and wrote software that provides support to the University&#x27;s network infrastructure (e.g., routers, switches, and wireless access points) as well as network services (e.g., DHCP, DNS, and IP address management).</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Designed and implemented a web application for user self-service to register devices on campus wired and wireless networks. Users can register a device with minimal interactions by automating and predicting to which network the user belongs.</li>
-					<li class="bullet">Maintained and updated an application that reports firewall rules. The application logs into those firewalls, collects the running configuration, processes it into a user-friendly format, and reports it to users based on their search queries.</li>
-					<li class="bullet">Wrote a set of SNMP libraries in Ruby to query network devices for information such as device name, MAC address, and hardware model.</li>
-					<li class="bullet">Implemented a new and adaptive inventory system for tracking network devices owned by the campus networking group.</li>
-					<li class="bullet">Wrote a Python library for making SOAP calls to a 3rd party proprietary wireless policy manager to collect information on connected users for historical and legal purposes.</li>
-					<li class="bullet">Created a web application for registering users on the campus guest wireless network.</li>
-					<li class="bullet">Implemented a network crawling library that generates a layer 3 topology map of wired networking devices on campus.</li>
-					<li class="bullet">Wrote a Python library for consuming the InfoBlox DDI web API in an object-oriented way.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Carnegie Mellon University &amp; University of Pittsburgh</span>
-					<span class="date">
-						2008-08-25 — 2011-05-30
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.compbio.cmu.edu/">http://www.compbio.cmu.edu/</a>
-				</div>
-				<div class="position">
-					Graduate Research Fellow
-				</div>
-				<div class="summary">
-					<p>Conducted research in computational biology in an interdisciplinary program that focused on computational methods to solve previously intractable biological problems.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Completed work towards solving a problem in immunology; specifically, adapting a computational physical model of cytotoxic T­ cell morphology.</li>
-					<li class="bullet">Simulated how the T­ cell changes its shape and orientation under the influence of anti­cancer agents using only physical forces and dynamics.</li>
-					<li class="bullet">Used mathematical computation techniques to solve a constrained optimization problem to produce minimal energy cell morphologies.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Horizon Mud Company</span>
-					<span class="date">
-						2010-06-09 — 2011-02-17
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://horizonmud.com/">http://horizonmud.com/</a>
-				</div>
-				<div class="position">
-					Software Developer
-				</div>
-				<div class="summary">
-					<p>Built a web application to help the sales team accomplish their goal of developing strong, long lasting vendor-customer relationships.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Built a Ruby on Rails app to create and modify web-accessible expense reports for customers.</li>
-					<li class="bullet">Reduced managerial burden through automation, eliminating thousands of man-hours per year in administrative expenses.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Pittsburgh</span>
-					<span class="date">
-						2006-08-14 — 2008-04-26
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://technology.pitt.edu/support/technical-consulting-for-students">http://technology.pitt.edu/support/technical-consulting-for-students</a>
-				</div>
-				<div class="position">
-					Residential Network Consultant
-				</div>
-				<div class="summary">
-					<p>Assisted students with technical issues and helped diagnose and fix problems with their computer, smartphones, and gaming consoles.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Removed viruses and spyware</li>
-					<li class="bullet">Performed backup services and reinstalled operating systems.</li>
-					<li class="bullet">Diagnosed and fixed network connectivity issues.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Field Expert</span>
-					<span class="date">
-						2006-09-25 — 2008-03-07
-					</span>
-				</h4>
-				<div class="position">
-					Software Developer
-				</div>
-				<div class="summary">
-					<p>Worked with a startup company that focused on software consulting and training.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Developed a Java EE application to solve problems related to inventory logistics.</li>
-					<li class="bullet">Wrote modules to give customers access to manipulate supply inventory data stored in MSSQL through a user­-friendly web interface.</li>
-					<li class="bullet">Created training tutorials used by the our instructors to teach how to install and use applications routinely used as part of the course.</li>
-					<li class="bullet">Composed introductory materials for students learning to write application code with our course technologies.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Pittsburgh</span>
-					<span class="date">
-						2006-11-15 — 2008-02-11
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.engineering.pitt.edu/Departments/Civil-Environmental/">http://www.engineering.pitt.edu/Departments/Civil-Environmental/</a>
-				</div>
-				<div class="position">
-					Web Master
-				</div>
-				<div class="summary">
-					<p>Managed and updated the website of the Civil &amp; Environmental Engineering at Pitt .</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Maintained the department website on a daily to weekly basis by updating course descriptions.</li>
-					<li class="bullet">Posted department news, faculty generated content, and advertisements for open faculty positions by editing static HTML and CSS when necessary.</li>
-					<li class="bullet">Designed a solution to fix accumulated errors in the often reused HTML template used across the department site.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>United States Steel Corporation</span>
-					<span class="date">
-						2006-01-03 — 2006-09-22
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.ussteel.com/">https://www.ussteel.com/</a>
-				</div>
-				<div class="position">
-					Intern
-				</div>
-				<div class="summary">
-					<p>Learned software development skills by writing enterprise applications that contributed to the corporate mission.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Wrote a Java application to handle steel inventory tracking.</li>
-					<li class="bullet">Built a data migration tool to assist in transitioning a legacy database to an Oracle database.</li>
-					<li class="bullet">Used my data migration tool to assist team members find missing inventory.</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+								<div class="talent">
+									<h2>Programming Languages</h2>
+									<p>Python</p>
+									<p>JavaScript</p>
+									<p>Ruby</p>
+									<p>Java</p>
+									<p>Go</p>
+									<p>C</p>
+									<p>C++</p>
+									<p>Bash</p>
+								</div>
+								<div class="talent">
+									<h2>Software Frameworks</h2>
+									<p>Django</p>
+									<p>Express.js</p>
+									<p>Bootstrap</p>
+									<p>jQuery</p>
+									<p>Ruby on Rails</p>
+									<p>Spring Framework</p>
+								</div>
+								<div class="talent">
+									<h2>Web Development</h2>
+									<p>HTML</p>
+									<p>XHTML</p>
+									<p>XML</p>
+									<p>CSS</p>
+								</div>
+								<div class="talent">
+									<h2>Programming Tools</h2>
+									<p>PyCharm</p>
+									<p>GitLab</p>
+									<p>Google Chrome Development Tools</p>
+								</div>
+								<div class="talent">
+									<h2>Networking</h2>
+									<p>DHCP</p>
+									<p>DNS</p>
+									<p>IPAM</p>
+									<p>SNMP</p>
+									<p>InfoBlox</p>
+									<p>Cisco Systems</p>
+									<p>Aruba Networks</p>
+									<p>F5 Networks</p>
+								</div>
+								<div class="talent">
+									<h2>System Administration</h2>
+									<p>Docker</p>
+									<p>Red Hat Enterprise Linux</p>
+									<p>VMWare ESXi</p>
+									<p>Apache Server</p>
+									<p>Puppet</p>
+									<p>Project Atomic</p>
+								</div>
+								<div class="talent">
+									<h2>Database Administration</h2>
+									<p>MySQL</p>
+									<p>PostgreSQL</p>
+									<p>SQLite</p>
+									<p>Neo4j</p>
+									<p>Hibernate ORM</p>
+									<p>Oracle</p>
+									<p>Microsoft SQL Server</p>
+								</div>
+								<div class="talent">
+									<h2>Scientific Computing</h2>
+									<p>NumPy</p>
+									<p>SciPy</p>
+									<p>matplotlib</p>
+									<p>MATLAB</p>
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
 
-	<section id="volunteer" class="row">
-		<aside class="col-sm-3">
-			<h3>Volunteer</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Pittsburgh</span>
-					<span class="date">
-						2007-02-11 — 2008-06-03
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.mwdeem.rice.edu/djearl/">http://www.mwdeem.rice.edu/djearl/</a>
-				</div>
-				<div class="position">
-					Undergraduate Research Assistant
-				</div>
-				<div class="summary">
-					<p>Trained as a practicing scientist in the David J. Earl Group at Pitt. I wrote code to produce genomic simulations and utilized my expertise in the statistical sciences to analyze the results and draw some new conclusions.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Wrote a genetic reproduction simulation in C and C++ to explore a problem in metagenetics.</li>
-					<li class="bullet">Gained new insights to the question: Do traits that affect hereditary processes (like mutation rates) spontaneously emerge and regulate their own expression as an evolutionary process?</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Pittsburgh</span>
-					<span class="date">
-						2004-08-30 — 2008-04-26
-					</span>
-				</h4>
-				<div class="area">
-					Applied Mathematics
-				</div>
-				<div class="studyType">
-					Bachelor of Science
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Programming Languages</h4>
-				</div>
-				<ul class="keywords">
-					<li>Python</li>
-					<li>JavaScript</li>
-					<li>Ruby</li>
-					<li>Java</li>
-					<li>Go</li>
-					<li>C</li>
-					<li>C++</li>
-					<li>Bash</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Software Frameworks</h4>
-				</div>
-				<ul class="keywords">
-					<li>Django</li>
-					<li>Express.js</li>
-					<li>Bootstrap</li>
-					<li>jQuery</li>
-					<li>Ruby on Rails</li>
-					<li>Spring Framework</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML</li>
-					<li>XHTML</li>
-					<li>XML</li>
-					<li>CSS</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Programming Tools</h4>
-				</div>
-				<ul class="keywords">
-					<li>PyCharm</li>
-					<li>GitLab</li>
-					<li>Google Chrome Development Tools</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Networking</h4>
-				</div>
-				<ul class="keywords">
-					<li>DHCP</li>
-					<li>DNS</li>
-					<li>IPAM</li>
-					<li>SNMP</li>
-					<li>InfoBlox</li>
-					<li>Cisco Systems</li>
-					<li>Aruba Networks</li>
-					<li>F5 Networks</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>System Administration</h4>
-				</div>
-				<ul class="keywords">
-					<li>Docker</li>
-					<li>Red Hat Enterprise Linux</li>
-					<li>VMWare ESXi</li>
-					<li>Apache Server</li>
-					<li>Puppet</li>
-					<li>Project Atomic</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Database Administration</h4>
-				</div>
-				<ul class="keywords">
-					<li>MySQL</li>
-					<li>PostgreSQL</li>
-					<li>SQLite</li>
-					<li>Neo4j</li>
-					<li>Hibernate ORM</li>
-					<li>Oracle</li>
-					<li>Microsoft SQL Server</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Scientific Computing</h4>
-				</div>
-				<ul class="keywords">
-					<li>NumPy</li>
-					<li>SciPy</li>
-					<li>matplotlib</li>
-					<li>MATLAB</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Experience</h2>
+						</div><!--// .yui-u -->
 
+						<div class="yui-u">
+							<div class="job">
+								<h2>Carnegie Mellon University</h2>
+								<h3>Software Engineer</h3>
+								<h4>2012-04-23 - 
+								Present
+								</h4>
+								<p>Designed and wrote software that provides support to the University&#x27;s network infrastructure (e.g., routers, switches, and wireless access points) as well as network services (e.g., DHCP, DNS, and IP address management).<br>
+								&bull; Designed and implemented a web application for user self-service to register devices on campus wired and wireless networks. Users can register a device with minimal interactions by automating and predicting to which network the user belongs.<br>
+							        								&bull; Maintained and updated an application that reports firewall rules. The application logs into those firewalls, collects the running configuration, processes it into a user-friendly format, and reports it to users based on their search queries.<br>
+							        								&bull; Wrote a set of SNMP libraries in Ruby to query network devices for information such as device name, MAC address, and hardware model.<br>
+							        								&bull; Implemented a new and adaptive inventory system for tracking network devices owned by the campus networking group.<br>
+							        								&bull; Wrote a Python library for making SOAP calls to a 3rd party proprietary wireless policy manager to collect information on connected users for historical and legal purposes.<br>
+							        								&bull; Created a web application for registering users on the campus guest wireless network.<br>
+							        								&bull; Implemented a network crawling library that generates a layer 3 topology map of wired networking devices on campus.<br>
+							        								&bull; Wrote a Python library for consuming the InfoBlox DDI web API in an object-oriented way.<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>Carnegie Mellon University &amp; University of Pittsburgh</h2>
+								<h3>Graduate Research Fellow</h3>
+								<h4>2008-08-25 - 
+                                                                2011-05-30
+</h4>
+								<p>Conducted research in computational biology in an interdisciplinary program that focused on computational methods to solve previously intractable biological problems.<br>
+								&bull; Completed work towards solving a problem in immunology; specifically, adapting a computational physical model of cytotoxic T­ cell morphology.<br>
+							        								&bull; Simulated how the T­ cell changes its shape and orientation under the influence of anti­cancer agents using only physical forces and dynamics.<br>
+							        								&bull; Used mathematical computation techniques to solve a constrained optimization problem to produce minimal energy cell morphologies.<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>Horizon Mud Company</h2>
+								<h3>Software Developer</h3>
+								<h4>2010-06-09 - 
+                                                                2011-02-17
+</h4>
+								<p>Built a web application to help the sales team accomplish their goal of developing strong, long lasting vendor-customer relationships.<br>
+								&bull; Built a Ruby on Rails app to create and modify web-accessible expense reports for customers.<br>
+							        								&bull; Reduced managerial burden through automation, eliminating thousands of man-hours per year in administrative expenses.<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>University of Pittsburgh</h2>
+								<h3>Residential Network Consultant</h3>
+								<h4>2006-08-14 - 
+                                                                2008-04-26
+</h4>
+								<p>Assisted students with technical issues and helped diagnose and fix problems with their computer, smartphones, and gaming consoles.<br>
+								&bull; Removed viruses and spyware<br>
+							        								&bull; Performed backup services and reinstalled operating systems.<br>
+							        								&bull; Diagnosed and fixed network connectivity issues.<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>Field Expert</h2>
+								<h3>Software Developer</h3>
+								<h4>2006-09-25 - 
+                                                                2008-03-07
+</h4>
+								<p>Worked with a startup company that focused on software consulting and training.<br>
+								&bull; Developed a Java EE application to solve problems related to inventory logistics.<br>
+							        								&bull; Wrote modules to give customers access to manipulate supply inventory data stored in MSSQL through a user­-friendly web interface.<br>
+							        								&bull; Created training tutorials used by the our instructors to teach how to install and use applications routinely used as part of the course.<br>
+							        								&bull; Composed introductory materials for students learning to write application code with our course technologies.<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>University of Pittsburgh</h2>
+								<h3>Web Master</h3>
+								<h4>2006-11-15 - 
+                                                                2008-02-11
+</h4>
+								<p>Managed and updated the website of the Civil &amp; Environmental Engineering at Pitt .<br>
+								&bull; Maintained the department website on a daily to weekly basis by updating course descriptions.<br>
+							        								&bull; Posted department news, faculty generated content, and advertisements for open faculty positions by editing static HTML and CSS when necessary.<br>
+							        								&bull; Designed a solution to fix accumulated errors in the often reused HTML template used across the department site.<br>
+							        </p>
+							</div>
+							<div class="job last">
+								<h2>United States Steel Corporation</h2>
+								<h3>Intern</h3>
+								<h4>2006-01-03 - 
+                                                                2006-09-22
+</h4>
+								<p>Learned software development skills by writing enterprise applications that contributed to the corporate mission.<br>
+								&bull; Wrote a Java application to handle steel inventory tracking.<br>
+							        								&bull; Built a data migration tool to assist in transitioning a legacy database to an Oracle database.<br>
+							        								&bull; Used my data migration tool to assist team members find missing inventory.<br>
+							        </p>
+							</div>
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
 
-	
+					<div class="yui-gf">
+					</div><!--// .yui-gf -->
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Education</h2>
+						</div>
+						<div class="yui-u">
+							<h2>University of Pittsburgh</h2>
+							<h3>Applied Mathematics, Bachelor of Science
+                                                        </h3>
+							<br>
+						</div>
+					</div><!--// .yui-gf -->
+				</div><!--// .yui-b -->
+			</div><!--// yui-main -->
+		</div><!--// bd -->
 
-	</div>
-	
-	</body>
+		<div id="ft">
+			<p>Karim Benbourenane &mdash; <a href="mailto:karim@benbourenane.com">karim@benbourenane.com</a> &mdash; (412) 889-9110</p>
+		</div><!--// footer -->
+	</div><!-- // inner -->
+</div><!--// doc -->
+</body>
 </html>
